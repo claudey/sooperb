@@ -1,0 +1,234 @@
+.posts-wrapper {
+  border: 0px solid #0f0;
+  width: 70%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 480px) {
+  .posts-wrapper {
+    width: 100%;
+  }
+}
+#noposts {
+  text-align: center;
+  color: #08c;
+  font-family: "kepler-std", Georgia, Times, serif;
+  line-height: 1.7em;
+  font-size: 1.4em;
+}
+.post {
+  border: 0px solid #bbb;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5em;
+  margin-bottom: 2em;
+  text-align: center;
+  border-bottom: 4px solid #e7e7e7;
+}
+.post .header {
+  border: 0px solid #eee;
+}
+.post .header .title {
+  font-family: 'Quintessential', Serif;
+  font-size: 3em;
+  line-height: 1.5em;
+  margin-top: 0;
+  margin-bottom: 0.4em;
+}
+.post .header .title a:link,
+.post .header .title a:visited {
+  text-decoration: none;
+  color: #222;
+}
+.post .header .title a:hover,
+.post .header .title a:active {
+  color: #005580;
+  text-decoration: underline;
+}
+.post .header .meta {
+  font-family: 'Georgia';
+  font-size: 1.3em;
+  font-style: italic;
+  color: #999;
+}
+.post .body {
+  text-align: justify;
+}
+.post .body p {
+  font-family: "kepler-std", Georgia, Times, serif;
+  line-height: 1.7em;
+  font-size: 1.4em;
+  color: #444;
+}
+.post .body p.indent {
+  text-indent: 3em;
+}
+.post .body p.sub-title {
+  font-size: 2.1em;
+}
+.post .body .feature {
+  text-align: center;
+  margin-top: 3vw;
+  margin-bottom: 4vw;
+}
+.post .body .feature-two .item {
+  margin-right: 1em;
+}
+.post .body .feature-description {
+  text-indent: 3em;
+  font-style: italic;
+}
+@media screen and (max-width: 480px) {
+  .post {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .post .body {
+    text-align: left;
+  }
+}
+#comments {
+  text-align: center;
+  font-family: "kepler-std", Georgia, Times, serif;
+  line-height: 1.7em;
+  font-size: 1.4em;
+  color: #444;
+  margin-bottom: 2em;
+}
+#comments #header {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.4em;
+}
+#comments #header h4 {
+  font-size: 1.15em;
+}
+#comments #body {
+  padding-top: 0.4em;
+}
+#comments #body .comment {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.5em;
+}
+#comments #body .comment .meta .author {
+  font-weight: bold;
+}
+#comments #body .comment .meta .when {
+  font-size: 1em;
+  color: #bbb;
+  font-style: italic;
+}
+#new-comment {
+  text-align: center;
+  border: 0px solid #ccc;
+  margin-top: 1em;
+  font-family: "kepler-std", Georgia, Times, serif;
+}
+#new-comment h4 {
+  text-align: center;
+  border: 0px solid #ccc;
+  margin-top: 1em;
+  text-transform: uppercase;
+  margin-bottom: 0.7em;
+  color: #3f729b;
+}
+#new-comment form #author-name {
+  width: 60%;
+  border-style: none;
+  padding: 0.7em 0.6em 0.3em 0.6em;
+  margin-bottom: 0.5em;
+  font-family: 'Gabriela', serif;
+  font-size: 1.5em;
+  text-align: center;
+  color: #555;
+  outline: none;
+}
+#new-comment form #comment-body {
+  visibility: visible;
+  width: 60%;
+  padding: 0.4em 0.6em 0.3em 0.6em;
+  border: none;
+  color: #555;
+  font-family: 'Gabriela', serif;
+  font-size: 1.5em;
+  text-align: center;
+  outline: none;
+  box-shadow: none;
+  border-bottom: 1px solid #f1f1f1;
+}
+#new-comment form div.guide {
+  font-family: "kepler-std", Georgia, Times, serif;
+  color: #666;
+  font-size: 1.3em;
+  margin-top: 1em;
+}
+#new-comment form #submit-btn {
+  border: 1px solid #ccc;
+  background-color: #eee;
+  border-radius: 6px;
+  padding: 0.5em 1.2em 0.5em 1.2em;
+  margin-top: 1em;
+  color: #666;
+  font-size: 1.3em;
+  font-family: "kepler-std", Georgia, Times, serif;
+  cursor: pointer;
+  -webkit-box-shadow: rgba(0,0,0,0.2) 0px -2px 0px 0px inset;
+  box-shadow: rgba(0,0,0,0.2) 0px -2px 0px 0px inset;
+}
+#new-comment form #submit-btn:hover {
+  background-color: #08c;
+  border: 1px solid #08c;
+  color: #fff;
+}
+.explore-by-category {
+  text-align: center;
+  border: 0px solid #bbb;
+  padding-bottom: 1.6em;
+}
+.explore-by-category .header {
+  margin-top: 1em;
+  text-transform: uppercase;
+  font-family: Georgia;
+  font-weight: normal;
+  font-size: 1.4em;
+  color: #888;
+}
+.explore-by-category .categories {
+  color: #aaa;
+}
+.explore-by-category .categories a {
+  font-family: 'Lato';
+  font-size: 1.5em;
+  margin-right: 0.1em;
+  margin-left: 0.1em;
+  color: #006da3;
+}
+.footer {
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 2em;
+}
+.footer .wrapper {
+  border-top: 1px solid #ddd;
+  padding-top: 2em;
+  width: 70%;
+  margin: 0 auto;
+}
+.footer p {
+  font-family: 'Quicksand';
+  margin: 0;
+  font-size: 1.4em;
+  line-height: 1.6em;
+}
+.footer img {
+  margin-bottom: 1em;
+}
+.footer p.copyright {
+  margin-top: 1em;
+}
+@media screen and (max-width: 480px) {
+  .footer .wrapper {
+    width: 100%;
+  }
+}

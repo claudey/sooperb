@@ -1,0 +1,22 @@
+extends layout
+
+block pagespecificstyles
+  link(rel="stylesheet"
+    type="text/css"
+    href="/stylesheets/index.css")
+
+block content
+  .container-fluid.blog-wrapper
+    include header
+    .row-fluid.content
+      .posts-wrapper
+        .posts
+          if posts.length
+            each post in posts
+              include post
+          else
+            include noposts
+        if posts.length
+          include pager
+          include categories
+    include footer

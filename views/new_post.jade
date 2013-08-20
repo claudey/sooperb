@@ -1,0 +1,95 @@
+extends layout
+
+block pagespecificstyles
+  link(rel="stylesheet"
+    type="text/css"
+    href="/stylesheets/new_post.css")
+
+block pagespecificscripts
+  script(src="/scripts/utils.js")
+  script(src="/scripts/newpost.js")
+  script(src="/scripts/tags.js")
+  script(src="/scripts/checks.js")
+  script(src="/scripts/dotests.js")
+  script(src="/scripts/scroll.js")
+
+block content
+  .container-fluid.blog-wrapper
+    include header
+    .row-fluid.content
+      .new-post-wrapper
+        form.new-post-form(name='new-post-form', method='POST', action='/posts/new', enctype='multipart/form-data')
+          include smiley
+          h3.header Submit a new post
+          .guidelines
+            .header
+              h4
+                | New Post Guidelines&nbsp;
+                a.toggler(href='#')  [-] 
+            .body
+              p
+                | Basic&nbsp;
+                span.em HTML&nbsp;
+                | is allowed: You can use the following tags in the body of your post:
+                span.tag p
+                span.tag a
+                span.tag img
+                span.tag div
+                span.tag blockquote
+                span.tag strong
+                span.tag br
+              p
+                | You can also include&nbsp;
+                span.em classes
+                | &nbsp;in your tags, both to describe its contents and to ensure that it gets styled properly. The following class values are allowed:
+                span.class sub-title
+                span.class feature-description
+                span.class indent
+                span.class feature
+                span.class feature-two
+                span.class item
+          #errors.errors.hidden
+          .input.title
+            input#post-title.validate(type='text', name='post[title]', placeholder='Enter a title for your post', data-section='title')
+          .input.body
+            textarea#post-body.validate(name='post[body]', placeholder='Put the body of your post here', data-section='body', data-allowed-tags='#{allowedTags}', data-allowed-classes='#{allowedClasses}')
+          .input.categories.validate(data-section='categories')
+            .header
+              h4 Under which category/(ies) would you like to place this post?
+            .body
+              .category
+                input#coding(type='checkbox', name='post[categories]', value='coding')
+                label(for='coding') Coding
+              .category
+                input#design(type='checkbox', name='post[categories]', value='design')
+                label(for='design') Design
+              .category
+                input#business(type='checkbox', name='post[categories]', value='business')
+                label(for='business') Business
+              .category
+                input#operations(type='checkbox', name='post[categories]', value='operations')
+                label(for='operations') Operations
+              .category
+                input#buzz(type='checkbox', name='post[categories]', value='buzz')
+                label(for='buzz') Buzz
+              .category
+                input#productivity(type='checkbox', name='post[categories]', value='productivity')
+                label(for='productivity') Productivity
+          .input.images.validate(data-section='images')
+            .header
+              h4
+                | If your post contains images, upload them here. Please add images in the order in which they appear in the article :)
+            .body
+              .image-fields
+                input#image1.image-file(name='post[images]', type='file')
+                a(href='#', title='Remove File', id='remove_file1', class="remove_link") &nbsp;x&nbsp;
+              .add-another-image
+                button#add-image.btn.btn-primary(type='button') Add Another Image
+          .input.submit-btn-holder
+            input#submit-btn.btn.btn-success(type='submit', name='submit-btn', value='Submit Article')
+    include footer
+  script(type='text/javascript', src='/scripts/elasticize.js')
+  script(type='text/javascript')
+    $(function() {
+      init()
+    })

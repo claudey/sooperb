@@ -1,0 +1,92 @@
+body {
+  padding-top: 1.5em;
+}
+.em {
+  font-weight: bold;
+}
+.row-fluid {
+  border: 0px solid #ddd;
+}
+.blog-wrapper {
+  border: 0px solid #222;
+  color: #222;
+  padding-left: 0;
+  padding-right: 0;
+}
+.mast {
+  text-align: center;
+  padding-bottom: 2em;
+}
+.mast .logo {
+  border: 0px solid #0f0;
+  width: 25%;
+  margin: 0 auto 0.5em auto;
+}
+.mast #intro {
+  font-family: 'Quicksand';
+}
+.mast #intro .blog-heading {
+  font-weight: normal;
+  margin: 0;
+  line-height: 1.4em;
+}
+.mast #intro .main {
+  font-size: 1.3em;
+}
+.mast #intro .sub {
+  font-size: 1.3em;
+  font-style: italic;
+}
+.footer {
+  text-align: center;
+  margin-top: 3em;
+}
+.footer .wrapper {
+  border-top: 1px solid #ddd;
+  padding-top: 2em;
+  width: 70%;
+  margin: 0 auto;
+}
+.footer p {
+  font-family: 'Quicksand';
+  margin: 0;
+  font-size: 1.4em;
+  line-height: 1.6em;
+}
+.errors {
+  font-family: 'Quicksand', serif;
+  color: #f00;
+  font-size: 1.4em;
+  margin-bottom: 1em;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.error {
+  border: 1px solid #f00 !important;
+  -webkit-box-shadow: 0 1px 3px rgba(255,0,0,0.71) !important;
+  -moz-box-shadow: 0 1px 3px rgba(255,0,0,0.71) !important;
+  box-shadow: 0 1px 3px rgba(255,0,0,0.71) !important;
+}
+.tag {
+  font-family: 'Georgia';
+  display: inline-block;
+  background-color: #eee;
+  border: 1px solid #bbb;
+  line-height: 0.8em;
+  padding: 0.2em 0.6em 0.3em 0.6em;
+  border-radius: 3px;
+  margin-left: 0.4em;
+}
+.class {
+  font-family: 'Georgia';
+  display: inline-block;
+  background-color: #009bcc;
+  color: #f9f9f9;
+  border: 1px solid #2785dc;
+  line-height: 0.8em;
+  padding: 0.2em 0.6em 0.3em 0.6em;
+  border-radius: 3px;
+  margin-left: 0.4em;
+}
