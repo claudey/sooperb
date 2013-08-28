@@ -6,13 +6,11 @@
     <meta keywords="claude ayitey, ayitey, claude techy africa, techy-africa, techy africa">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<!--     <link rel="stylesheet" href="sooperb.css" />
- -->    
-    <!-- Bootstrap 3.0.0rc1, FontAwesome 3.2.1 -->
+   
+    <!-- Bootstrap 3.0.0rc1, photo and favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="https://dl.dropboxusercontent.com/u/64058349/cayitey.ico" />
     <link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/64058349/ayitey/sooperb.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css">
-    <link rel="shortcut icon" type="image/x-icon" href="https://dl.dropboxusercontent.com/u/64058349/cayitey.ico" />
 </head>
 <body>
     <div class="container main">
@@ -21,7 +19,7 @@
             <div id="ball"></div>
         </div>
         <div class="col-md-8 text">
-            <div class="word"><h1>Claude A&sdot;yi&sdot;tey</h1></div>
+            <div class="name"><h1>Claude A&sdot;yi&sdot;tey</h1></div>
             <div class="spoken">/ˈklôd-ˈayētæ/<span class="fontawesome-volume-up"></span></div>
             <div class="def-block">
                 <div class="part">Proper Noun</div>
@@ -59,12 +57,12 @@
             </div>
         </div>
     </div>
-
+    <!-- clickable ball follows -->
     <script>
     var f = document.getElementById('ball');
         document.addEventListener('click', function(ev){
-            f.style.left = (ev.clientX-25)+'px';
-            f.style.top = (ev.clientY-25)+'px';
+            f.style.left = (ev.clientX)+'px';
+            f.style.top = (ev.clientY)+'px';
         },false);  
     </script>
     
