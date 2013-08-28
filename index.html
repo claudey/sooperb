@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
 </head>
 <body>
+    <div id="ball"></div>
     <div class="container main">
         <div class="col-md-offset1 col-md-3 photo">
             <img width="200" height="350" src="https://dl.dropboxusercontent.com/u/64058349/ayitey.png" alt="picture of claude ayitey">
-            <div id="ball"></div>
         </div>
         <div class="col-md-8 text">
             <div class="name"><h1>Claude A&sdot;yi&sdot;tey</h1></div>
@@ -61,8 +61,8 @@
     <script>
     var f = document.getElementById('ball');
         document.addEventListener('click', function(ev){
-            f.style.left = (ev.clientX)+'px';
-            f.style.top = (ev.clientY)+'px';
+            f.style.left = (ev.clientX-25)+'px';
+            f.style.top = (ev.clientY-25)+'px';
         },false);  
     </script>
     
